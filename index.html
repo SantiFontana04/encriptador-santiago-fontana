@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Santiago Fontana</a>
+            </div>
+            
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+           
+        </header>
+
+
+    </div>
+
+    <div class="container">
+
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+        </div>
+
+        <div class="terminos"> <ul>
+            <li> <p>Solo letras minúsculas y sin acentos</p> </li>
+        </ul> 
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">
+                Encriptar
+            </button>
+            <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+            <input type="button" class="copiar" value="Copiar" id="copiar" onclick="copiar()"> 
+        </div>
+    </div>
+    <div class="encriptado">
+        <img src="Imagenes/Muñeco.png" alt="Muñeco" id="muñeco">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo" class="estilo-aplicado">
+                Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
